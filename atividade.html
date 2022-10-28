@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Prática</title>
+</head>
+<body>
+    
+    <div>
+
+    </div>
+    <button id="botao" type="submit">Clique aqui</button>
+    
+    <script>
+        var nome = "Lucas";
+        var sobrenome = "Mendes";
+        var email = "lucas@gmail.com";
+
+        function valores(nome, sobrenome, email) {
+            console.log(nome, sobrenome, email);            
+        }
+
+        document.getElementById('botao').addEventListener('click', valores(nome, sobrenome, email));
+    </script>
+</body>
+</html>
