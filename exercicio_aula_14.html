@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade da aula "Arrays II" (aula 14)</title>
+</head>
+    
+<body>
+
+    <h1>Atividade da aula "Arrays II" (aula 14)</h1>
+    <p>Verificar se a soma dos 2 valores digitar é MAIOR que 10. Se for, aparecerá a mensagem!</p>
+
+    Valor 1: <input type="text" id="valor1"/>
+    <br/>
+    Valor 2:<input type="text" id="valor2"/>
+    <br/>
+
+    <button onclick="verifica()">Verifica</button>
+
+    <div id="texto"></div>
+    
+
+    <script>
+
+        function verifica(){
+            var valor1 = +document.getElementById("valor1").value;
+            var valor2 = +document.getElementById("valor2").value;
+            var soma = valor1 + valor2;
+
+            if(soma > 10){
+                texto.innerHTML = "Valor " + soma + " é maior que 10";
+            }
+        }
+
+    </script>
+</body>
+</html>
+
+

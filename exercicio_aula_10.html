@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade da aula de Fundamentos de JavaScript (aula 10)</title>
+</head>
+    
+<body>
+    
+    <h1>Atividade da aula de Fundamentos de JavaScript (aula 10)</title></h1>
+    
+    Nome: <input type="text" id="nome" placeholder="Digite seu nome...">
+    <br>
+    Sobrenome: <input type="text" id="sobrenome" placeholder="Digite seu sobrenome...">
+    <br>
+    E-mail: <input type="text" id="email" placeholder="Digite seu email...">
+    <br>
+
+    <button onclick="mostrar_dados()">Mostrar</button>
+
+    <div id="texto_nome"></div>
+    <div id="texto_sobrenome"></div>
+    <div id="texto_email"></div>
+
+
+    <script>
+
+        function mostrar_dados() {
+            var nome = document.getElementById("nome").value;
+            var sobrenome = document.getElementById("sobrenome").value;
+            var email = document.getElementById("email").value;
+
+            texto_nome.innerHTML = "O nome é: " + nome;
+            texto_sobrenome.innerHTML = "O sobrenome é: " + sobrenome;
+            texto_email.innerHTML = "O e-mail é: " + email;
+        }
+
+    </script>
+</body>
+</html>
+
+
+    
+
+
+    
